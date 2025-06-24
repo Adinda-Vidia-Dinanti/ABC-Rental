@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABC Rental</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rental Mobil ABC</h1>
+
+    <form id="rental-form">
+      <div class="car-list">
+       
+        <div class="car">
+          <img src="Asset/Toyota Avanza.JPEG" alt="Toyota Avanza" />
+          <h3>Toyota Avanza</h3>
+          <p>Rp 500.000 / hari</p>
+          <label><input type="checkbox" name="car" value="Avanza" data-price="500000" /> Pilih</label>
+          <label>Tanggal Sewa: <input type="date" name="start-date-Avanza" /></label>
+          <label>Durasi (hari): <input type="number" name="duration-Avanza" min="1" /></label>
+        </div>
+
+      
+        <div class="car">
+          <img src="Asset/Toyota Kijang Inova.JPG" alt="Kijang Innova" />
+          <h3>Toyota Kijang Innova</h3>
+          <p>Rp 700.000 / hari</p>
+          <label><input type="checkbox" name="car" value="Innova" data-price="700000" /> Pilih</label>
+          <label>Tanggal Sewa: <input type="date" name="start-date-Innova" /></label>
+          <label>Durasi (hari): <input type="number" name="duration-Innova" min="1" /></label>
+        </div>
+
+      
+        <div class="car">
+          <img src="Asset/HRV.PNG" alt="Honda HRV" />
+          <h3>Honda HRV</h3>
+          <p>Rp 600.000 / hari</p>
+          <label><input type="checkbox" name="car" value="HRV" data-price="600000" /> Pilih</label>
+          <label>Tanggal Sewa: <input type="date" name="start-date-HRV" /></label>
+          <label>Durasi (hari): <input type="number" name="duration-HRV" min="1" /></label>
+        </div>
+
+       
+        <div class="car">
+          <img src="Asset/Sigra.JPG" alt="Daihatsu Sigra" />
+          <h3>Daihatsu Sigra</h3>
+          <p>Rp 450.000 / hari</p>
+          <label><input type="checkbox" name="car" value="Sigra" data-price="450000" /> Pilih</label>
+          <label>Tanggal Sewa: <input type="date" name="start-date-Sigra" /></label>
+          <label>Durasi (hari): <input type="number" name="duration-Sigra" min="1" /></label>
+        </div>
+      </div>
+
+      <div class="customer-form">
+        <label>Nama Pelanggan: <input type="text" id="customer-name" required /></label>
+        <button type="button" onclick="calculateTotal()">Hitung Total</button>
+        <button type="button" onclick="saveBooking()">Simpan Pemesanan</button>
+      </div>
+    </form>
+
+    <div id="summary"></div>
+
+    <h2>Daftar Pemesanan</h2>
+    <ul id="booking-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #5f98e8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  background: rgb(237, 238, 239);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.car img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.customer-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.customer-form input {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#summary {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#booking-list li {
+  background: #e8f0fe;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+}
